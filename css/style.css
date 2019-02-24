@@ -1,0 +1,123 @@
+#carousel-slide {
+    color: black;
+    height: 375px;
+}
+
+body {
+    color: #0b0b0c;
+}
+
+.header-text {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, .header {
+    font-family:  'Indie Flower', cursive;
+}
+
+.img-shadow {
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #0b0b0c;
+}
+
+.tint {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* cursor: pointer; */
+    /* -webkit-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    -moz-box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    box-shadow: rgba(0,0,0,.2) 3px 5px 5px; */
+  }
+  
+.tint:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(224, 224, 224, 0.33);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.tint:hover:before {
+    background: none;
+}
+
+.box {
+    background-color: #E0E0E0;
+}
+
+#modalBody{
+    height: 75px;
+    /* margin-left: 160px;     */
+}
+
+.modal-icon {
+    padding: 0px 0px 0px 0px;
+    color: #337ab7; /*#0b0b0c; */
+    height: 40px;
+    width: 40px;
+}
+.modal-body {
+    padding: 20px 20px 20px 20px;
+}
+#modalpic{
+    margin: 20px 20px 20px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.modal-content{
+    background-color: #F5F5F5;
+}
+.show-on-hover:hover > ul.dropdown-menu {   
+    display: block;  
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    /* background-image: url("../img/background.jpg");
+    background-repeat: no-repeat; */
+    /* background-size: cover; */
+ }
+ 
+ .well {
+     background-color: #0b0b0c;
+ }
+.shadow {
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-weight: bold; 
+}
+
+.diffcolor {
+ color: black;
+ text-shadow: black 0.1em 0.1em 0.2em;
+ font-weight: bold;
+ }
+
+h2 {
+ padding-top: 2cm;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+    align-content: center;
+}
