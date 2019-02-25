@@ -24,7 +24,12 @@ var markerClusters = L.markerClusterGroup();
 var smallgroups = CCB.PublicGroupList.data
 for ( var i = 0; i < smallgroups.length; ++i )
 {
-  var popup = smallgroups[i].GardenLocation;
+  var popup = smallgroups[i].smallgroups;
+  // capture null lat-longs
+  if (smallgroups[i].meet_at_latitude === null) {
+    smallgroups[i].meet_at_latitude = 46.822197;
+    smallgroups[i].meet_at_longitude = -92.104697;
+  }
  
   var m = L.marker( [smallgroups[i].meet_at_latitude, smallgroups[i].meet_at_longitude]) //, {icon: myIcon} )
                   .bindPopup( popup );
