@@ -21,12 +21,12 @@ var myIcon = L.icon({
 });
 
 var markerClusters = L.markerClusterGroup();
- 
-for ( var i = 0; i < markers.length; ++i )
+var smallgroups = CCB.PublicGroupList.data
+for ( var i = 0; i < smallgroups.length; ++i )
 {
-  var popup = markers[i].GardenLocation;
+  var popup = smallgroups[i].GardenLocation;
  
-  var m = L.marker( [markers[i].latitude, markers[i].longitude]) //, {icon: myIcon} )
+  var m = L.marker( [smallgroups[i].meet_at_latitude, smallgroups[i].meet_at_longitude]) //, {icon: myIcon} )
                   .bindPopup( popup );
  
   markerClusters.addLayer( m );
